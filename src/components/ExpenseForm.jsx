@@ -13,7 +13,7 @@ setExpense((prevState)=>({...prevState,[name]:value}))
 const validationConfig={
   title:[{required:true,message:'Please enter the title'},{minLength:2,message:'title should be at least 4 characters long'}],
   category:[{required:true,message:'please select a category'}],
-  amount:[{required:true,message:'Please enter an amount'},{pattern:/^[1-9]\d(\.\d+)?$/,message:'please enter a valid number'}]
+  amount:[{required:true,message:'Please enter an amount'},{pattern: /^\d+(\.\d{1,2})?$/,message:'please enter a valid number'}]
 }
   const validate = (formData) => {
     const errorsData = {};
