@@ -4,9 +4,8 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import ExpenseForm from "./components/ExpenseForm";
 import ExpenseTable from "./components/ExpenseTable";
-import ContextMenu from "./components/ContextMenu";
-import expenseData from "../../expenseData";
 import { useLocalStorage } from "./hooks/useLocalStorage";
+import expenseData from "../expenseData";
 
 function App() {
   const [expenses, setExpenses] = useLocalStorage('expenses',expenseData);
